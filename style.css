@@ -1,0 +1,412 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'helvetica';
+	overflow-x: hidden;
+}
+
+/* Navbar */
+
+.navbar {
+	height: 90px;
+	background: #F1F3FF;
+	z-index: 10;
+}
+
+.navbar-brand {
+	height: 34px;
+	width: 100px;
+	padding: 8px 15px;
+	background: #0D28A6;
+}
+
+.nav-item .register {
+	padding: 8px 15px;
+	background: #5CB85F;
+	cursor: pointer;
+}
+
+.nav-item .register:hover {
+	background: #3D7B3F;
+}
+
+.nav-item {
+	padding: 5px 10px;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+
+/* End of Navbar */
+
+/* Main Section */
+
+.main__section {
+	background: #F1F3FF;
+	overflow-x: hidden;
+}
+
+.col__main__section h2 {
+	margin-top: 27%;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 54px;
+}
+
+.col__main__section p {
+	font-size: 14px;
+	line-height: 20px;
+	margin-right: 100px;
+}
+
+a.btn {
+	font-size: 14px;
+	padding: 10px 15px;
+	background: #5CB85F;
+	border: none;
+	color: #fff;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+a.btn:hover {
+	color: #fff;
+	background: #3D7B3F;
+}
+
+.col__image img {
+	height: 404px;
+	width: 674px;
+	margin-top: 10%;
+}
+
+/* End Of Main Section */
+
+
+/* Our Service Section */
+
+.our__service {
+	margin-top: 3%;
+}
+
+.col__image__service img {
+	height: 408px;
+	width: 439px;
+	margin-top: 15%;
+	margin-left: 12%;
+}
+
+.col__service h3 {
+	margin-top: 21%;
+	margin-left: 80px;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.col__service p {
+	font-size: 14px;
+	margin-left: 80px;
+	margin-top: 15px;
+}
+
+.col__service .bi-check {
+	height: 40px;
+	width: 40px;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: #CFD4ED;
+}
+
+/* End of service section */
+
+/* Why Us Section */
+
+.why__us {
+	margin-top: 6%;
+}
+
+.h1__wu {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.p__wu {
+	font-size: 14px;
+}
+
+.card-body h5 {
+	font-size: 16px;
+	font-weight: 700;
+	margin-top: 15px;
+}
+
+.card-body p {
+	margin-top: 15px;
+	font-size: 14px;
+}
+
+.card-body .bi-hand-thumbs-up {
+	height: 40px;
+	width: 40px;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: #F9CC00;
+}
+
+.card-body .bi-tag {
+	height: 40px;
+	width: 40px;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: #FA2C5A;
+}
+
+.card-body .bi-clock {
+	height: 40px;
+	width: 40px;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: #0D28A6;
+}
+
+.card-body .bi-award {
+	height: 40px;
+	width: 40px;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: #73CA5C;
+}
+
+/* End of Why Us Section */
+
+/* Testimonial Section */
+
+.testimonial {
+	margin-top: 5%;
+}
+
+.testimonial .h1__testimonial {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 36px;
+	text-align: center;
+}
+
+.testimonial .p__testimonial {
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.carousel {
+	margin-top: 2%;
+}
+
+.carousel-indicators {
+	left: 0;
+	top: auto;
+	bottom: -70px;
+}
+
+.carousel-indicators .bt {
+	display: flex;
+	justify-content: space-around;
+	width: 100px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.carousel-indicators .bt1 {
+	border-radius: 50%;
+	background-color: #fff;
+	margin-left: 10px;
+	border: 1px solid #C4C4C4;
+	font-size: 15px;
+	text-align: center;
+}
+
+.carousel-indicators .bt1 i {
+	transition: 0.5s;
+}
+
+.carousel-indicators .bt1:hover {
+	background-color: #5cb85f;
+	border: 1px solid #5cb85f;
+}
+
+.carousel-indicators .bt1:hover i {
+	color: white;
+}
+
+.carousel-indicators .bi-chevron-left,
+.carousel-indicators .bi-chevron-right {
+	height: 30px;
+	width: 30px;
+	padding: 5px;
+	border-radius: 50%;
+	font-size: 15px;
+	text-align: center;
+}
+
+.carousel-indicators .active {
+	color: white;
+	background-color: #5CB85F;
+	border: none;
+	text-align: center;
+}
+
+.single-box {
+	padding: 50px 30px 200px;
+	border-radius: 8px;
+	background-color: #F1F3FF;
+	height: 300px;
+}
+
+.testimonial .img-area {
+	position: absolute;
+	margin: 0;
+	width: 30%;
+}
+
+.img-area img {
+	width: 70px;
+	height: 70px;
+	margin-top: 30px;
+}
+
+.text-img .bi-star-fill {
+	color: #F9CC00;
+}
+
+
+.text-img p {
+	font-size: 14px;
+	line-height: 20px;
+	margin-top: 5px;
+}
+
+.text-img h2 {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+}
+
+.testimonial .text-img {
+	float: left;
+	padding-left: 30%;
+}
+
+/* End of Testimonial Section */
+
+
+/* Sewa Mobil Section */
+.sewa__mobil {
+	margin-top: 10%;
+	margin-bottom: 100px;
+}
+
+.sewa__mobil .jumbotron {
+	text-align: center;
+	background-color: #0D28A6;
+	border-radius: 13px;
+}
+
+.jumbotron h1 {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 54px;
+	color: #fff;
+}
+
+.jumbotron p {
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
+}
+
+.jumbotron .btn-success {
+	margin-top: 25px;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 700;
+}
+
+/* End of Sewa Mobil Section */
+
+/* FAQ Section */
+
+.faq1 {
+	display: flex;
+	margin-bottom: 150px;
+	font-size: 14px;
+}
+
+.content1 {
+	flex-basis: 50%;
+}
+
+.content2 {
+	width: 100%;
+	flex-basis: 50%;
+}
+
+.dropbox {
+	width: 100%;
+	border: solid #d4d4d4 1px;
+	padding: 16px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+
+/* End of FAQ Section */
+
+/* Footer */
+
+.footer {
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+
+.col__alamat p {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.col__nav2 a {
+	font-size: 14px;
+	line-height: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+.col__connect p {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.col__connect i {
+	height: 40px;
+	width: 40px;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: #0D28A6;
+	color: white;
+}
+
+.col__cr p {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.col__cr .kosong {
+	height: 34px;
+	width: 100px;
+	background-color: #0D28A6;
+}
+
+/* End of Footer */
