@@ -2,16 +2,265 @@
 	margin: 0;
 	padding: 0;
 }
+html {
+	font-size: 100%;
+}
 
 body {
 	font-family: 'helvetica';
 	overflow-x: hidden;
 }
+.btn-light-green {
+  background-color: #5cb85f;
+  color: #ffffff;
+  border-radius: 2px;
+}
 
+
+.testi .item {
+  background-color: #f1f3ff;
+  padding: 20px 30px;
+  border-radius: 8px;
+}
+
+.testi .item img {
+	width: 50%;
+	margin-left: 40px;
+}
+/* End */
+
+.testi button {
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 6px;
+}
+/* End */
+
+.testi button.btn-left {
+  background-color: #ffffff;
+  border: 1px solid #222222;
+}
+/* End */
+
+.testi .star {
+  font-size: 30px;
+  color: #f9cc00;
+}
+
+@media screen and (min-width: 1000px) {
+  .col__main__section p {
+   	margin-right: 100px;
+   	font-size: 14px;
+	line-height: 20px;
+  }
+  .col__image img {
+  margin-top: 50px;
+	height: 414px;
+	width: 710px;
+	margin-left: 70px;
+  }
+  .col__image__service img {
+	height: 408px;
+	width: 439px;
+	margin-top: 15%;
+	margin-left: 12%;
+  }
+
+  .col__service h3 {
+	margin-top: 21%;
+	margin-left: 80px;
+	font-size: 24px;
+	font-weight: 700;
+  }  
+
+  .col__service p {
+	font-size: 14px;
+	margin-left: 80px;
+	margin-top: 15px;
+  }
+
+  .h1__wu {
+	font-size: 24px;
+	font-weight: 700;
+  }
+
+  .p__wu {
+	font-size: 14px;
+  }
+
+  .carousel-indicators .bt1 {
+	border-radius: 50%;
+	background-color: #fff;
+	margin-left: 10px;
+	border: 1px solid #C4C4C4;
+	font-size: 15px;
+	text-align: center;
+  }
+  
+  .sewa__mobil {
+	margin-top: 5%;
+	margin-bottom: 100px;
+  }
+
+  .faq1 {
+	display: flex;
+	margin-bottom: 150px;
+	font-size: 14px;
+  }
+
+  .content1 {
+	flex-basis: 50%;
+  }
+
+
+  .footer {
+	margin-top: 10%;
+	margin-bottom: 5%;
+  }
+
+  .col__connect i {
+	height: 40px;
+	width: 40px;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: #0D28A6;
+	color: white;
+  }
+
+  .col__cr p {
+	font-size: 14px;
+	line-height: 20px;
+  }
+
+  .col__alamat p {
+	font-size: 14px;
+	line-height: 20px;
+  }
+
+
+
+}
+@media screen and (max-width: 999px) {
+  .col__main__section p {
+  	font-size: 14px;
+	line-height: 20px;
+  }
+ .testi .owl-carousel .item {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .testi .owl-carousel .item .bintang {
+    text-align: center;
+  }
+
+  .testi .owl-carousel .item img {
+    width: 5rem;
+    margin: auto;
+  }
+  .next,
+  .prev {
+        transform: scale(1);
+        opacity: 1;
+   }
+
+    .item {
+        display: block !important;
+    }
+
+  .col__image img {
+	margin-top: 10%;
+	width: 104%;
+    height: auto;
+  }
+  .col__image__service img {
+	width: 100%;
+    height: auto;
+    margin-top: 15%;
+  }
+  .col__service h3 {
+	margin-top: 7%;
+	font-size: 24px;
+	font-weight: 700;
+  }
+
+  .col__service p {
+		font-size: 14px;
+		margin-top: 15px;
+  }
+ 
+  .h1__wu {
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+  }
+
+  .p__wu {
+  	text-align: center;
+	font-size: 14px;
+  }
+  .card {
+  	margin-top: 15px;
+  }
+
+  .carousel-indicators .bt1 {
+	border-radius: 50%;
+	background-color: #fff;
+	margin-left: 10px;
+	border: 1px solid #C4C4C4;
+	font-size: 15px;
+	text-align: center;
+	margin-bottom: 24px;
+  }
+
+  .sewa__mobil {
+	margin-top: 25%;
+	margin-bottom: 100px;
+  }
+
+  .faq1 {
+	margin-bottom: 150px;
+	font-size: 14px;
+  }
+
+  .content1 h1 {
+	font-size: 7vw;
+	text-align: center;
+	font-weight: bolder;
+  }
+
+  .footer {
+	margin-top: 5%;
+	margin-bottom: 5%;
+  }
+  
+  .col__connect i {
+	height: 40px;
+	width: 40px;
+	padding: 5px;
+	margin-right: 15px;
+	border-radius: 50%;
+	background-color: #0D28A6;
+	color: white;
+  }
+
+  .col__cr p {
+  	margin-top: 15px;
+	font-size: 14px;
+	line-height: 20px;
+  }
+
+  .col__alamat p {
+	font-size: 14px;
+	line-height: 20px;
+  }
+}
 /* Navbar */
 
 .navbar {
-	height: 90px;
 	background: #F1F3FF;
 	z-index: 10;
 }
@@ -50,7 +299,7 @@ body {
 }
 
 .col__main__section h2 {
-	margin-top: 27%;
+	margin-top: 17%;
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 54px;
@@ -59,7 +308,6 @@ body {
 .col__main__section p {
 	font-size: 14px;
 	line-height: 20px;
-	margin-right: 100px;
 }
 
 a.btn {
@@ -77,10 +325,8 @@ a.btn:hover {
 	background: #3D7B3F;
 }
 
-.col__image img {
-	height: 404px;
-	width: 674px;
-	margin-top: 10%;
+
+.col__image img {	
 }
 
 /* End Of Main Section */
@@ -92,25 +338,6 @@ a.btn:hover {
 	margin-top: 3%;
 }
 
-.col__image__service img {
-	height: 408px;
-	width: 439px;
-	margin-top: 15%;
-	margin-left: 12%;
-}
-
-.col__service h3 {
-	margin-top: 21%;
-	margin-left: 80px;
-	font-size: 24px;
-	font-weight: 700;
-}
-
-.col__service p {
-	font-size: 14px;
-	margin-left: 80px;
-	margin-top: 15px;
-}
 
 .col__service .bi-check {
 	height: 40px;
@@ -128,23 +355,20 @@ a.btn:hover {
 	margin-top: 6%;
 }
 
-.h1__wu {
-	font-size: 24px;
-	font-weight: 700;
-}
-
-.p__wu {
-	font-size: 14px;
+.why__us .card{
+    height: 12rem;
 }
 
 .card-body h5 {
 	font-size: 16px;
 	font-weight: 700;
 	margin-top: 15px;
+  line-height: 24px;
 }
 
 .card-body p {
 	margin-top: 15px;
+	margin-right: 40px;
 	font-size: 14px;
 }
 
@@ -219,14 +443,7 @@ a.btn:hover {
 	margin-top: 30px;
 }
 
-.carousel-indicators .bt1 {
-	border-radius: 50%;
-	background-color: #fff;
-	margin-left: 10px;
-	border: 1px solid #C4C4C4;
-	font-size: 15px;
-	text-align: center;
-}
+
 
 .carousel-indicators .bt1 i {
 	transition: 0.5s;
@@ -270,7 +487,6 @@ a.btn:hover {
 	margin: 0;
 	width: 30%;
 }
-
 .img-area img {
 	width: 70px;
 	height: 70px;
@@ -303,10 +519,6 @@ a.btn:hover {
 
 
 /* Sewa Mobil Section */
-.sewa__mobil {
-	margin-top: 10%;
-	margin-bottom: 100px;
-}
 
 .sewa__mobil .jumbotron {
 	text-align: center;
@@ -339,19 +551,15 @@ a.btn:hover {
 
 /* FAQ Section */
 
-.faq1 {
-	display: flex;
-	margin-bottom: 150px;
-	font-size: 14px;
-}
-
-.content1 {
-	flex-basis: 50%;
-}
-
 .content2 {
 	width: 100%;
 	flex-basis: 50%;
+}
+
+.faq .accordion button {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .dropbox {
@@ -367,15 +575,8 @@ a.btn:hover {
 
 /* Footer */
 
-.footer {
-	margin-top: 10%;
-	margin-bottom: 5%;
-}
 
-.col__alamat p {
-	font-size: 14px;
-	line-height: 20px;
-}
+
 
 .col__nav2 a {
 	font-size: 14px;
@@ -389,19 +590,8 @@ a.btn:hover {
 	line-height: 20px;
 }
 
-.col__connect i {
-	height: 40px;
-	width: 40px;
-	padding: 5px;
-	border-radius: 50%;
-	background-color: #0D28A6;
-	color: white;
-}
 
-.col__cr p {
-	font-size: 14px;
-	line-height: 20px;
-}
+
 
 .col__cr .kosong {
 	height: 34px;
@@ -410,3 +600,93 @@ a.btn:hover {
 }
 
 /* End of Footer */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    background-color: #FFF;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+ }
+ .menu_list{
+    list-style-type:none;
+    margin-left:0px;
+ }
+ .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 19px;
+    padding-left: 20px;
+    color: #818181;
+    display: block;
+    color: #fff;
+ }
+ 	.btn-register .register {
+	padding: 3px 15px;
+	background: #5CB85F;
+	cursor: pointer;
+	width: 120px;
+	height: 35px;
+	}
+
+	.btn-register .register:hover {
+	background: #3D7B3F;
+	}
+
+	.btn-register {
+	padding: 5px 20px;
+	font-weight: 400;
+	font-size: 14px;
+	}
+ 
+ .sidenav label {
+    color: black;
+    position: absolute;
+    top: 19px;
+    left: 20px;
+    font-size: 18px;
+    transition: all 0.3s;
+    font-weight: bold;
+ }
+ .sidenav a:hover {
+    color: #f1f1f1;
+    background: #ffba93;
+    transition: 0.7s;
+ }
+ .sidenav .close_btn {
+	 	color: black;
+    position: absolute;
+    top: 20px;
+   	right: 20px;
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s;
+ }
+
+ .sidenav2 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 18;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+ }
+ .menu_list2{
+    list-style-type:none;
+    margin-left:0px;
+ }
+
+ .profile-pic {
+    width: 100px !important;
+    height: 100px;
+    box-shadow: 0px 4px 8px 0px #BDBDBD
+}

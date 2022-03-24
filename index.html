@@ -3,25 +3,32 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
 		integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 	<!-- Bootstrap Icons -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 	<!-- Style -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<title>Binar Car Rental</title>
 </head>
 
 <body>
 
 	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="#"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="menu_btn">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
@@ -49,20 +56,58 @@
 	</nav>
 	<!-- End of Navbar -->
 
-
+	<!-- Sidebar -->
+	<div id="side_nav" class="sidenav">
+		<label>BCR</label>
+		<i class="bi bi-x-lg close_btn"></i>
+		<ul class="navbar-nav ml-auto">
+					<li class="btn-register">
+						<a class="nav-link text-dark" href="#Our__Service">Our Service <span
+								class="sr-only">(current)</span></a>
+					</li>
+					<li class="btn-register">
+						<a class="nav-link text-dark" href="#Why__Us">Why Us</a>
+					</li>
+					<li class="btn-register">
+						<a class="nav-link text-dark" href="#Testimonial">Testimonial</a>
+					</li>
+					<li class="btn-register">
+						<a class="nav-link text-dark" href="#FAQ__Section">FAQ</a>
+					</li>
+					<li class="btn-register">
+						<a class="nav-link register text-white btn btn-success" href="#">Register</a>
+					</li>
+				</ul>
+ 	</div>
+ 	<div id="side_nav2" class="sidenav2">
+ 	</div>
+ 	<script>
+ 		$(document).ready(function(){
+ 			$("#menu_btn").click(function(){
+ 				$("#side_nav").css("width","250px");
+ 				$("#side_nav2").css("width","1000px");
+		       	});
+			    $(".close_btn, #layer").click(function(){
+			    $("#side_nav").css("width","0px");
+			    $("#side_nav2").css("width","0px");
+			    });
+			 });
+ 	</script>
+	<!-- End of Sidebar -->	
+	
 	<!-- Main Section -->
 	<section class="main__section" id="Main__section">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col__main__section">
-					<h2> Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h2>
+					<h2> Sewa & Rental Mobil Terbaik di kawasan Bandar Lampung</h2>
 					<p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga
 						terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
 					<a href="#" class="btn btn-success">Mulai Sewa Mobil</a>
 				</div>
 
 				<div class="col-md-6 col__image">
-					<img src="img_car.png">
+					<img src="assets/img/img_car.png">
 				</div>
 			</div>
 		</div>
@@ -79,7 +124,7 @@
 					<img src="img_service.png" class="img-responsive">
 				</div>
 				<div class="col-md-6 col__service">
-					<h3>Best Car Rental for any kind of trip in (Lokasimu)!</h3>
+					<h3>Best Car Rental for any kind of trip in Bandar Lampung!</h3>
 					<p>Sewa mobil di Bandar Lampung bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang
 						lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis,
 						wedding, meeting, dll.</p>
@@ -151,142 +196,90 @@
 	<!-- End of Why Us Section -->
 
 	<!-- Testimonial Section -->
-	<section class="testimonial" id="Testimonial">
-		<h1 class="h1__testimonial"> Testimonial </h1>
-		<p class="p__testimonial">Berbagai review positif dari para pelanggan kami</p>
-		<div class="row">
-			<div class="col-md-12">
-				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<div class="bt1">
-							<i class="bi bi-chevron-left"></i>
-						</div>
-						<div class="bt1">
-							<i class="bi bi-chevron-right"></i>
-						</div>
-					</ol>
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<div class="row">
-								<div class="col-md-4">
-									<div class="single-box mt-2">
-										<div class="img-area">
-											<img src="img_photo.png" alt="user0">
-										</div>
-										<div class="text-img">
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-												lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-												lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
-											</p>
-											<h2>John Dee 32, Bromo</h2>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="single-box  mt-2">
-										<div class="img-area">
-											<img src="img_photo2.png" alt="user1">
-										</div>
-										<div class="text-img">
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-												lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-												lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
-											</p>
-											<h2>John Dee 32, Bromo</h2>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="single-box  mt-2">
-										<div class="img-area">
-											<img src="img_photo3.png" alt="user2">
-										</div>
-										<div class="text-img">
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-												lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-												lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
-											</p>
-											<h2>John Dee 32, Bromo</h2>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+	 <section class="testi" id="testi">
+      <div class="container">
+        <div class="row mt-5 pt-3">
+          <div class="col-md mt-5 text-center">
+            <h3>Testimonial</h3>
+            <p>Berbagai review positif dari para pelanggan kami.</p>
+          </div>
+        </div>
+      </div>
 
-						<div class="carousel-item">
-							<div class="row">
-								<div class="col-md-4">
-									<div class="single-box  mt-2">
-										<div class="img-area">
-											<img src="img_photo.png" alt="user4">
-										</div>
-										<div class="text-img">
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-half"></i>
-											<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
-												pariatur ea inventore eligendi iusto, quis autem placeat</p>
-											<h2>John Dee 32, Bromo</h2>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="single-box  mt-2">
-										<div class="img-area">
-											<img src="img_photo2.png" alt="user5">
-										</div>
-										<div class="text-img">
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
-												pariatur ea inventore eligendi iusto, quis autem placeat</p>
-											<h2>John Dee 32, Bromo</h2>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="single-box  mt-2">
-										<div class="img-area">
-											<img src="img_photo3.png" alt="user6">
-										</div>
-										<div class="text-img">
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-half"></i>
-											<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
-												pariatur ea inventore eligendi iusto, quis autem placeat</p>
-											<h2>John Dee 32, Bromo</h2>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+      <!-- Carousel Using Owl Carousel -->
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="row">
+            <div class="col-md-3 text-center my-auto">
+              <img src="assets/img/img_photo-1.png" class="rounded-circle"  alt="GambarPhoto1" />
+            </div>
+            <div class="col-md">
+              <div class="bintang">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, incidunt odit? Exercitationem earum officia est. Dolore nobis totam quia dolores ad velit tempora accusamus maiores eligendi, illo quidem modi fugit.</p>
+              <p class="user fw-bold">John Dee 32, Bromo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="row">
+            <div class="col-md-3 text-center my-auto">
+              <img src="assets/img/img_photo-2.png" class="rounded-circle" alt="GambarPhoto2" />
+            </div>
+            <div class="col-md">
+              <div class="bintang">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, incidunt odit? Exercitationem earum officia est. Dolore nobis totam quia dolores ad velit tempora accusamus maiores eligendi, illo quidem modi fugit.</p>
+              <p class="user fw-bold">John Dee 32, Bromo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="row">
+            <div class="col-md-3 text-center my-auto">
+              <img src="assets/img/img_photo-1.png" class="rounded-circle" alt="GambarPhoto3" />
+            </div>
+            <div class="col-md">
+              <div class="bintang">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, incidunt odit? Exercitationem earum officia est. Dolore nobis totam quia dolores ad velit tempora accusamus maiores eligendi, illo quidem modi fugit.
+              </p>
+              <p class="user fw-bold">John Dee 32, Bromo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col text-center">
+            <button class="btn btn btn-left" type="button"><img src="assets/img/chevron-left.svg" alt="Chevron1" /></button>
+
+            <button class="btn btn-light-green btn-right" type="button"><img src="assets/img/chevron-right.svg" alt="Chevron2" /></button>
+          </div>
+        </div>
+      </div>
+    </section>
 	<!-- End of Testimonial Section -->
 
 	<!-- Jumbotron Section -->
@@ -303,40 +296,77 @@
 	<!-- End of Jumbotron Section -->
 
 	<!-- FAQ Section -->
-	<section class="faq__section" id="FAQ__Section">
-		<div class="faq1 container">
-			<div class="content1">
-				<h1>Frequently Asked Question</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-			</div>
-			<div class="content2">
-				<div class="dropbox">
-					Apa saja syarat yang dibutuhkan?
-					<i class="bi bi-chevron-down" style="float: right;"></i>
-				</div>
+	<section class="faq" id="faq">
+      <div class="container">
+        <div class="row mt-5 pt-3">
+          <div class="col-md-5 mt-5">
+            <h3>Frequently Asked Question</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
 
-				<div class="dropbox">
-					Berapa hari minimal sewa mobil lepas kunci?
-					<i class="bi bi-chevron-down" style="float: right;"></i>
-				</div>
+          <div class="col-md mt-5">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Apa saja syarat yang dibutuhkan?</button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nulla.</p>
+                  </div>
+                </div>
+              </div>
 
-				<div class="dropbox">
-					Berapa hari sebelumnya sabaiknya booking sewa mobil?
-					<i class="bi bi-chevron-down" style="float: right;"></i>
-				</div>
+              <div class="accordion-item mb-3 border-top">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Berapa hari minimal sewa mobil lepas kunci?</button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, repudiandae?</p>
+                  </div>
+                </div>
+              </div>
 
-				<div class="dropbox">
-					Apakah Ada biaya antar-jemput?
-					<i class="bi bi-chevron-down" style="float: right;"></i>
-				</div>
+              <div class="accordion-item mb-3 border-top">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Berapa hari sebelumnya sebainya booking sewa mobil?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, amet.</p>
+                  </div>
+                </div>
+              </div>
 
-				<div class="dropbox">
-					Bagaimana jika terjadi kecelakaan?
-					<i class="bi bi-chevron-down" style="float: right;"></i>
-				</div>
-			</div>
-		</div>
-	</section>
+              <div class="accordion-item mb-3 border-top">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Apakah Ada biaya antar-jemput?</button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, amet.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item mb-3 border-top mb-5">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Bagaimana jika terjadi kecelakaan?</button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, amet.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 	<!-- End of FAQ Section-->
 
 	<!-- Footer -->
@@ -370,6 +400,23 @@
 		</div>
 	</section>
 
-	<!-- End of Footer -->
+	<!-- End of Footer -->	
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Boostrap JS -->
+    <script src="/path/to/cdn/bootstrap.bundle.min.js"></script>
+
+    <!-- FeatherIcons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- My JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>
